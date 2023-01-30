@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* background-color: #71f0cc; */
+  background-image: url("https://media.istockphoto.com/id/968097294/vector/green-mountain-landscape-vector.jpg?s=612x612&w=0&k=20&c=8iBxGy4ofUXLrfBwVRkuMULdmr16NCFdICB30O-ZaPA=");
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    width:  65%;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.head h1{
+    color: rgb(69, 68, 68);
+
+}
+.head img{
+    width: 160px;
+    height: 130px;
+
+}
+.head p{
+    color: rgb(69, 68, 68);
+    font-size: 1rem;
+}
+.head p span{
+    color:black;
+    font-weight: bold;
+}
+
+.searchbar{
+    margin-top:40px;
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+   background-color: white;
+   border-radius: 12px ;
+   /* justify-content:space-around; */
+   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.searchbar p{
+    color:rgb(69, 68, 68);
+    font-size: larger;
+}
+
+.search{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+input{
+    width: 70%;
+    height: 5vh;
+    border-radius: 18px;
+    text-align: center;
+    transition: width 0.3s ease-in-out;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+input:hover{
+    width: 80%;
+    box-shadow: 0px 0px 6px #71f0cc;
+    outline :none;
+}
+input:focus{
+    width: 80%;
+    box-shadow: 0px 0px 6px #71f0cc;
+    outline :none;
+}
+input:active{
+    width: 80%;
+    box-shadow: 0px 0px 6px #71f0cc;
+    outline :none;
+}
+.search button{
+    background-color: orange;
+    padding: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 9%;
+    transition: width 0.4s ease-in-out;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.search button:hover{
+    background-color: orange ;
+    width: 11%;
+    color: black;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #71f0cc;
+}
+.search button:active{
+    width: 11%;
+    color: black;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #71f0cc;
+    transform: translateY(3px);
+}
+.subcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+div img{
+    width: 200px;
+    height: 200px;
+    margin: 10px 20px;
+    border-radius: 8px;
+}
+
+
+@media only screen and (min-width:200px) and (max-width:800px){
+    .head{
+        width: 90%;
+    }
+   .head h1{
+    text-align: center;
+    font-size: 1.2rem;
+   }
+   .head p{
+    font-size: 0.5rem;
+        text-align: center;
+   }
+   .head img{
+    width:25%;
+   }
+    .searchbar {
+        width: 90%;
+    } 
+     .searchbar p{
+        font-size: 0.9rem;
+        text-align: center;
+     }
+   .search button{
+        width:20%;
+        font-size:0.6rem;
+    }
+}
